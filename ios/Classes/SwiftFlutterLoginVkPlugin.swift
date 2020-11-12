@@ -160,8 +160,8 @@ public class SwiftFlutterLoginVkPlugin: NSObject, FlutterPlugin {
                 "userId": user.id,
                 "firstName": user.first_name,
                 "lastName": user.last_name,
-                "online": user.online?.toBool(),
-                "onlineMobile": user.online_mobile?.toBool(),
+                "online": false, //user.online.toBool(), :FIXED BUILD CRASH 
+                "onlineMobile": false, //user.online_mobile.toBool(), :FIXED BUILD CRASH 
                 "photo50": user.photo_50,
                 "photo100": user.photo_100,
                 "photo200": user.photo_200,
